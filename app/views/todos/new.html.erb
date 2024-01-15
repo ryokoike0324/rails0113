@@ -1,0 +1,7 @@
+<main>
+  <p>本日やるべきことを入力してください</p>
+  <%= form_with model: @todo do |form| %>
+    <%= form.text_field :content %>
+    <%= form.submit "保存" %>
+  <% end %>
+</main>

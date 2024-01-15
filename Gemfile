@@ -68,9 +68,10 @@ group :development do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec'
+  gem 'dip'
   gem "ruby-lsp"
-  gem "dip"
-  gem "solargraph"
+  gem 'htmlbeautifier' # rubocop:disable Bundler/OrderedGems
+  gem "solargraph" # rubocop:disable Style/StringLiterals
 end
 
 group :test do

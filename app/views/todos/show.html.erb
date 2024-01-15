@@ -1,0 +1,6 @@
+<p>Todo を編集できます</p>
+<%= form_with model: @todo do |f|%>
+<%= f.label "Todo"%>
+<%= f.text_field :content %>
+<%= f.submit "変更を保存する" %>
+<% end %>text_field
